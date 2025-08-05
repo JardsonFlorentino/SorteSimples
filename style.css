@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/fundo.png);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 20px;
+    min-height: 100vh;  
+   
+}
+
+
+
+
+img {
+    max-width:300px;
+    max-height: 300px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: translateY(-8px) scale(1.02);
+    
+}
+
+h3 {
+    margin-top: 100px;
+    color: #2C3E50;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+h3:hover {
+    transform: translateY(-8px) scale(1.02);
+    color: #2ECC71 ;
+    
+}
+
+input {
+    width: 340px;
+    height: 60px;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    padding: 0 20px;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 16px 40px rgba(46, 204, 113, 0.5);
+}
+
+/* --- Media Query para Responsividade --- */
+
+@media (max-width: 450px) {
+    body {
+        padding: 30px 20px;
+    }
+
+    img {
+        max-width: 250px;
+        margin-top: 40px;
+    }
+
+    h3 {
+        margin-top: 60px;
+    }
+
+    input {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+
+button {
+    width: 300px;
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    background-color: #2ECC71  ;
+    color: #2C3E50;
+    cursor: pointer;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+button:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 16px 40px rgba(46, 204, 113, 0.5);
+}
