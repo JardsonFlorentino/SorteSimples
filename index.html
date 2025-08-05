@@ -24,12 +24,14 @@
 
    <button onclick="generateNumber()">Sortear</button>
 
-   <div class="result-container" id="resultContainer">
-      <span class="balloon left">🎈🎊</span>
-      <p id="resultNumber">0</p>
-      <span class="balloon right">🎊🎈</span>
+   <div id="resultModal" class="modal-overlay">
+      <div class="modal-content">
+         <span class="close-button" onclick="closeModal()">&times;</span>
+         <span class="balloon left">🎉</span>
+         <p id="resultNumber">0</p>
+         <span class="balloon right">🎉</span>
+      </div>
    </div>
-
 
 </body>
 
