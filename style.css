@@ -6,6 +6,9 @@
 
 body {
     background-image: url(assets/fundo.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,7 +88,7 @@ input:hover {
     justify-content: center;
     gap: 30px;
     animation: fadeIn 0.4s ease-in-out;
-    background-color: #34495e; 
+    background-color: #ECF0F1; 
     padding: 40px 60px;
     border-radius: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -93,10 +96,10 @@ input:hover {
 }
 
 #resultNumber {
-    font-size: 2.3rem;
+    font-size: 5rem;
     font-weight: bold;
-    color: #ECF0F1 ;
-    background-color: #34495e ;
+    color: #34495e ;
+    background-color: #ECF0F1 ;
     padding: 10px 40px;
     border-radius: 30px;
     box-shadow: 0 4px 20px rgba(148, 153, 234, 0.0979959);
@@ -125,7 +128,7 @@ input:hover {
 }
 
 .balloon {
-    font-size: 2.5rem;
+    font-size: 5rem;
     animation: float 2s ease-in-out infinite;
 }
 
